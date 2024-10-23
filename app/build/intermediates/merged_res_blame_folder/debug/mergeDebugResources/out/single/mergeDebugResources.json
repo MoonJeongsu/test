@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.js.msensorview.app-debug-21:/layout_main.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/layout/main.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable-ldpi_icon.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_white_42_5_on.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_white_42_5_on.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable-hdpi_icon.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_42_5_on.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_42_5_on.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/layout_result.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/layout/result.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_pre.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_pre.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_button_orange_42.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/button_orange_42.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable-mdpi_icon.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_gray_pre.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_gray_pre.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_gray.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_gray.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_nor.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_nor.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_small_pre.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_small_pre.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_42_5.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_42_5.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_gray_nor.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_gray_nor.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_orange_small_nor.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_orange_small_nor.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/layout_popup_basic.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/layout/popup_basic.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_button_white_42.xml.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/button_white_42.xml"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_btn_white_42_5.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/btn_white_42_5.9.png"
+    },
+    {
+        "merged": "com.js.msensorview.app-debug-21:/drawable_popup_bg.9.png.flat",
+        "source": "com.js.msensorview.app-main-23:/drawable/popup_bg.9.png"
+    }
+]

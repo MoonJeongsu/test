@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+     <LinearLayout
+	    android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:background="#ccffff" 
+		android:layout_height="65dp">
+		
+				
+	     <com.fsn.cauly.CaulyAdView
+	        xmlns:app="http://schemas.android.com/apk/res/com.js.msensorview"
+	        android:id="@+id/ad"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"   
+	        app:appcode="WHLNO12J" 
+	        app:effect="LeftSlide"
+	        app:reloadInterval="15"
+	        app:bannerHeight="Fixed"
+	        />
+	    </LinearLayout> 
+    
+    <ScrollView 
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+         <LinearLayout android:orientation="vertical"
+     	   android:layout_width="fill_parent" android:layout_height="wrap_content">
+<!-- <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="가속도"
+    />
+<TextView  
+    android:id="@+id/acc"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="방향"
+    />
+<TextView  
+    android:id="@+id/ori"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="회전"
+    />
+<TextView  
+    android:id="@+id/rot"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="밝기"
+    />
+<TextView  
+    android:id="@+id/lig"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    /> -->
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Magnetic Sensor View"
+    />
+<TextView  
+    android:id="@+id/mag"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+
+<TextView  
+    android:id="@+id/teslaxyz"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    />
+
+<TextView  
+    android:id="@+id/pitch"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    />
+
+<TextView  
+    android:id="@+id/pitchtext"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    />
+
+<!-- <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="압력"
+    />
+<TextView  
+    android:id="@+id/pre"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+ <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="근접"
+    />
+ <TextView  
+    android:id="@+id/prox"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+ <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="온도"
+    />
+ <TextView  
+    android:id="@+id/temp"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+ <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="최대 가속도"
+    />
+  <TextView  
+    android:id="@+id/maxAcc"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    /> -->
+    
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+  
+		  <!-- <LinearLayout android:orientation="vertical"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_marginLeft="50dp">
+		        
+		      
+				  <TextView  
+				    android:id="@+id/inputtext"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="wrap_content"
+				    android:text="- tesla 범위값 입력" 
+				    />
+				  
+				  <EditText android:id="@+id/newitem" 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:inputType="number"
+					android:text = "25" />        
+		          
+		   </LinearLayout> -->
+		   
+		 <!--  <LinearLayout android:orientation="vertical"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_marginLeft="100dp">
+		        
+		      
+				  <TextView  
+				    android:id="@+id/inputtext1"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="wrap_content"
+				    android:text="tesla 범위값 입력" 
+				    />
+				  
+				  <EditText android:id="@+id/newitem1" 
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:inputType="number"
+					android:layout_marginLeft="50dp"
+					
+					android:text = "25" />        
+		          
+		   </LinearLayout>  -->  
+   </RelativeLayout>
+   
+    
+       <TextView  
+	    android:id="@+id/waring"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+  
+     <TextView  
+	    android:id="@+id/ypos"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text = "↑Y"
+	    />
+     <TextView  
+	    android:id="@+id/ypos1"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    />
+     
+      <TextView  
+	    android:id="@+id/xpos"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	    android:layout_marginTop="10dp"
+	    android:text = "→X"
+	    />
+      <TextView  
+	    android:id="@+id/xpos1"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	    />
+      
+      <TextView  
+	    android:id="@+id/zpos"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:layout_marginTop="10dp"
+	    android:text = "↙Z"
+	    />
+      <TextView  
+	    android:id="@+id/zpos1"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    />
+      
+	     <LinearLayout android:orientation="horizontal"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    	<Button android:id="@+id/call2" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:gravity="center"
+				android:text="SAVE START" />	
+			<Button android:id="@+id/call3" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:gravity="center"
+				android:text="SAVE END" />	
+			</LinearLayout>
+	     
+	    </LinearLayout>
+			
+     </ScrollView>
+     
+    <ListView android:id="@+id/list" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" />
+</LinearLayout>

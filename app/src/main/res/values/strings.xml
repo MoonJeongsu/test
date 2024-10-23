@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AndroidSensorActivity!</string>
+    <string name="app_name">Magnetic Sensor View</string>
+    <!-- 권한 요청 팝업 -->
+    <string name="request_title">사용자 권한 요청</string>
+    <string name="request_content">권한을 허용을 거부하시면 이용하실 수 없습니다.</string>
+    <string name="request_confirm">확인</string>
+
+    <!-- Main 메인 -->
+    <string name="main_battery_0">0%</string>
+    <string name="main_battery_10">10%</string>
+    <string name="main_battery_15">15%</string>
+    <string name="main_battery_20">20%</string>
+    <string name="main_battery_25">25%</string>
+    <string name="main_battery_50">50%</string>
+    <string name="main_battery_75">75%</string>
+    <string name="main_battery_100">100%</string>
+    <string name="main_mode_grind">GRIND</string>
+    <string name="main_ok">OK</string>
+    <string name="main_save">SAVE</string>
+    <string name="main_no">NO</string>
+    <string name="main_adf_connected">Connected</string>
+    <string name="main_adf_disconnected">DisConnected</string>
+    <string name="main_lock_alerts">Lock alerts</string>
+    <string name="main_buletooth_message">Bluetooth is turned off. Please turn Bluetooth on.</string>
+    <string name="main_bt">BT</string>
+    <string name="main_adf">ADF</string>
+    <string name="main_ltr">LTR</string>
+    <string name="main_dkr">DKR</string>
+    <string name="main_short">SHORT</string>
+    <string name="main_long">LONG</string>
+    <string name="main_less">LESS</string>
+    <string name="main_more">MORE</string>
+    <string name="main_sync">Update...</string>
+
+
+    <!-- Login 로그인 -->
+    <string name="login_id">ID</string>
+    <string name="login_adf">ADF No.</string>
+    <string name="login_email">Enter your e-mail, or empoloyee number.</string>
+    <string name="login_serial">Enter the ADF serial number.</string>
+    <string name="login_cancel">Cancel</string>
+    <string name="login_confirm">Confirm</string>
+
+
+    <!-- Statistics 통계 -->
+    <string name="statistics_title">Statistics</string>
+    <string name="statistics_day">Day</string>
+    <string name="statistics_week">Week</string>
+    <string name="statistics_month">Month</string>
+    <string name="statistics_connected">Connected</string>
+    <string name="statistics_disconnected">DisConnected</string>
+    <string name="statistics_lockalerts">Lock alerts</string>
+
+
+    <!-- GNB 메뉴 -->
+    <string name="gnb_menu">Menu</string>
+    <string name="gnb_statistics">Statistics</string>
+    <string name="gnb_lock">Lock</string>
+    <string name="gnb_notification">Notification</string>
+    <string name="gnb_help">Help</string>
+    <string name="gnb_signout">Signout</string>
+
+
+    <!-- Mode 모드 -->
+    <string name="mode_weld">WELD</string>
+    <string name="mode_cut">CUT</string>
+    <string name="mode_grind">GRIND</string>
+    <string name="mode_xmode">X-MODE</string>
+    <string name="mode_shade">SHADE</string>
+    <string name="mode_delay">DELAY</string>
+    <string name="mode_sense">SENSE</string>
+
+
+    <!-- Info 인포 -->
+    <string name="info_arctime">ArcTime</string>
+    <string name="info_clock">Clock</string>
+    <string name="info_timer">Timer</string>
+    <string name="info_alarm">Alarm</string>
+    <string name="info_language">Language</string>
+    <string name="info_english">English</string>
+    <string name="info_french">French</string>
+    <string name="info_german">German</string>
+    <string name="info_korean">Korean</string>
+    <string name="info_set">SET</string>
+    <string name="info_on">ON</string>
+    <string name="info_off">OFF</string>
+    <string name="info_am">AM</string>
+    <string name="info_pm">PM</string>
+    <string name="info_hour">HOUR</string>
+    <string name="info_min">MIN</string>
+    <string name="info_sec">SEC</string>
+</resources>

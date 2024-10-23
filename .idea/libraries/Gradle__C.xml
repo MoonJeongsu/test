@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: C" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/e5cc4918227a502b4c6ed3d55efdc71f/transformed/jetified-cauly-sdk-3.5.30/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/e5cc4918227a502b4c6ed3d55efdc71f/transformed/jetified-cauly-sdk-3.5.30/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/e5cc4918227a502b4c6ed3d55efdc71f/transformed/jetified-cauly-sdk-3.5.30/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

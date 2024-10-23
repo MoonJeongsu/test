@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.js.msensorview"
+    android:versionCode="21"
+    android:versionName="1.2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <!-- 안드로이드12 대응: Google AD ID 수집을 위한 퍼미션 권한 추가 -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <queries>
+        <package android:name="com.android.chrome" /> <!-- 크롬 브라우저 앱 패키지 명 -->
+        <package android:name="com.android.browser" /> <!-- 기본 브라우저 앱 패키지 명 -->
+        <package android:name="com.sec.android.app.sbrowser" /> <!-- 삼성 브라우저 앱 패키지 명 -->
+        <package android:name="com.dreamgames.royalmatch" />
+        <package android:name="jp.co.ponos.battlecatskr" />
+        <package android:name="com.habby.sssnaker" />
+        <package android:name="com.rovio.baba" />
+        <package android:name="com.hg.happydessertsKR" />
+        <package android:name="com.playrix.gardenscapes" />
+        <package android:name="com.king.candycrushsaga" />
+        <package android:name="com.playrix.homescapes" />
+        <package android:name="com.king.blossomblast" />
+        <package android:name="com.playrix.township" />
+        <package android:name="com.standegg.realmerge" />
+        <package android:name="com.habby.punball" />
+        <package android:name="com.habby.kinjarun" />
+        <package android:name="com.percent.aos.randomdicego" />
+        <package android:name="com.nhnent.Qpoker" />
+        <package android:name="com.lilithgames.rok.gpkr" />
+        <package android:name="com.topwar.gp" />
+        <package android:name="com.camelgames.aoz" />
+        <package android:name="com.igg.android.lordsmobile" />
+        <package android:name="com.more.lastfortress.gp" />
+        <package android:name="com.nexon.kartdrift" />
+        <package android:name="com.nexon.kart" />
+        <package android:name="com.nianticlabs.pokemongo" />
+        <package android:name="com.gof.global" />
+        <package android:name="com.nintendo.zara" />
+        <package android:name="com.nekki.shadowfight" />
+        <package android:name="com.pubg.krmobile" />
+        <package android:name="com.supercell.brawlstars" />
+        <package android:name="com.pandadagames.ninja.global" />
+        <package android:name="com.miHoYo.bh3korea" />
+        <package android:name="com.fungames.battletanksbeta" />
+        <package android:name="com.haegin.playtogether" />
+        <package android:name="com.kakaogames.umamusume" />
+        <package android:name="com.fantome.penguinisle" />
+        <package android:name="com.nexon.fmk" />
+        <package android:name="com.longtukorea.yulgang" />
+        <package android:name="com.miHoYo.GenshinImpact" />
+        <package android:name="com.dxx.firenow" />
+        <package android:name="com.hunt.royale" />
+        <package android:name="com.kr.krd3.google" />
+        <package android:name="com.ncsoft.lineagem19" />
+        <package android:name="com.kakaogames.archewar" />
+        <package android:name="com.ncsoft.lineage2m19" />
+        <package android:name="com.ncsoft.lineagew" />
+        <package android:name="com.kakaogames.odin" />
+        <package android:name="com.tg.jsxwkr.gp" />
+        <package android:name="com.nexon.hit2" />
+        <package android:name="com.nexon.mdnf" />
+        <package android:name="com.roblox.client" />
+        <package android:name="com.netmarble.bnsmkr" />
+        <package android:name="com.jvstudios.gpstracker" />
+        <package android:name="com.tg.ysczgkr.gp" />
+        <package android:name="com.global.ztmslgkr" />
+        <package android:name="com.devsisters.ck" />
+        <package android:name="com.gravity.rox.and" />
+        <package android:name="com.proximabeta.nikke" />
+        <package android:name="com.qjzj4399kr.google" />
+        <package android:name="com.ageofeternity.global" />
+        <package android:name="com.nexon.nsc.maplem" />
+        <package android:name="com.kakaogames.eversoul" />
+        <package android:name="com.jiulingsykr.andr" />
+        <package android:name="com.chaosportal.shark" />
+        <package android:name="com.legendsabuk.legends" />
+        <package android:name="com.nexon.bluearchive" />
+        <package android:name="com.heavenburnsred" />
+        <package android:name="com.com2us.smon.normal.freefull.google.kr.android.common" />
+        <package android:name="com.ulugame.hsjgkr.google" />
+        <package android:name="com.amonggods.cgpb" />
+        <package android:name="com.nexters.herowars" />
+        <package android:name="kr.aos.com.aprogen.dragonrajaorigin" />
+        <package android:name="com.stove.epic7.google" />
+        <package android:name="viva.republica.toss" />
+        <package android:name="com.fusionmedia.investing" />
+        <package android:name="com.miraeasset.trade" />
+        <package android:name="com.kbsec.mts.iplustarngm2" />
+        <package android:name="com.droid4you.application.wallet" />
+        <package android:name="com.wooriwm.mugsmart" />
+        <package android:name="com.wooriwm.txsmart" />
+        <package android:name="com.daishin" />
+        <package android:name="com.samsungpop.android.mpop" />
+        <package android:name="com.yuanta.tradarm" />
+        <package android:name="com.truefriend.neosmartarenewal" />
+        <package android:name="com.shinhaninvest.mts" />
+        <package android:name="kr.co.finda.finda" />
+        <package android:name="com.btckorea.bithumb" />
+        <package android:name="com.dunamu.exchange" />
+        <package android:name="net.daum.android.webtoon" />
+        <package android:name="com.nhn.android.webtoon" />
+        <package android:name="co.spoonme" />
+        <package android:name="com.netflix.mediaclient" />
+        <package android:name="net.cj.cjhv.gs.tving" />
+        <package android:name="kr.co.captv.pooqV2" />
+        <package android:name="com.jobplanet.kr.android" />
+        <package android:name="net.nrise.moci" />
+        <package android:name="com.teamblind.blind" />
+        <package android:name="com.linkedin.android" />
+        <package android:name="kr.co.rememberapp" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.kakao.talk" />
+        <package android:name="com.nhn.android.band" />
+        <package android:name="com.instagram.android" />
+        <package android:name="com.nhn.android.search" />
+        <package android:name="com.ss.android.ugc.trill" />
+        <package android:name="com.twitter.android" />
+        <package android:name="com.nexon.er" />
+        <package android:name="com.nike.omega" />
+        <package android:name="com.coupang.mobile" />
+        <package android:name="com.alibaba.aliexpresshd" />
+        <package android:name="com.einnovation.temu" />
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.js.msensorview.MainApp"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- Google Play Service SDK 설정 -->
+        <!--
+        Google Play Service SDK를 사용하는 App에 한해 아래 meta-
+		data 테그를 추가한다.
+        -->
+        <!--
+        (https://developer.android.com/google/play-
+		services/setup.html)
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.js.msensorview.AndroidSensorActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.js.msensorview.ResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:label="Save View" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.Transparent.Permission" />
+
+        <provider
+            android:name="com.gun0912.tedpermission.provider.TedPermissionProvider"
+            android:authorities="com.js.msensorview.tedpermissionprovider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.js.msensorview.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

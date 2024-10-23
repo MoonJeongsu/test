@@ -1,0 +1,542 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.js.msensorview"
+4    android:versionCode="21"
+5    android:versionName="1.2.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:37:5-67
+11-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:37:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:38:5-78
+12-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:38:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:40:2-77
+13-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:40:19-75
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:41:2-76
+14-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:41:19-74
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:42:2-79
+15-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:42:19-60
+16    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+16-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:43:5-82
+16-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:43:22-79
+17    <!-- 안드로이드12 대응: Google AD ID 수집을 위한 퍼미션 권한 추가 -->
+18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+18-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:12:5-79
+18-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:12:22-76
+19
+20    <queries>
+20-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:14:5-127:15
+21        <package android:name="com.android.chrome" /> <!-- 크롬 브라우저 앱 패키지 명 -->
+21-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:15:9-54
+21-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:15:18-51
+22        <package android:name="com.android.browser" /> <!-- 기본 브라우저 앱 패키지 명 -->
+22-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:16:9-55
+22-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:16:18-52
+23        <package android:name="com.sec.android.app.sbrowser" /> <!-- 삼성 브라우저 앱 패키지 명 -->
+23-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:17:9-64
+23-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:17:18-61
+24        <package android:name="com.dreamgames.royalmatch" />
+24-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:18:9-61
+24-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:18:18-58
+25        <package android:name="jp.co.ponos.battlecatskr" />
+25-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:19:9-60
+25-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:19:18-57
+26        <package android:name="com.habby.sssnaker" />
+26-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:20:9-54
+26-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:20:18-51
+27        <package android:name="com.rovio.baba" />
+27-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:21:9-50
+27-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:21:18-47
+28        <package android:name="com.hg.happydessertsKR" />
+28-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:22:9-58
+28-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:22:18-55
+29        <package android:name="com.playrix.gardenscapes" />
+29-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:23:9-60
+29-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:23:18-57
+30        <package android:name="com.king.candycrushsaga" />
+30-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:24:9-59
+30-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:24:18-56
+31        <package android:name="com.playrix.homescapes" />
+31-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:25:9-58
+31-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:25:18-55
+32        <package android:name="com.king.blossomblast" />
+32-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:26:9-57
+32-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:26:18-54
+33        <package android:name="com.playrix.township" />
+33-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:27:9-56
+33-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:27:18-53
+34        <package android:name="com.standegg.realmerge" />
+34-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:28:9-58
+34-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:28:18-55
+35        <package android:name="com.habby.punball" />
+35-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:29:9-53
+35-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:29:18-50
+36        <package android:name="com.habby.kinjarun" />
+36-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:30:9-54
+36-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:30:18-51
+37        <package android:name="com.percent.aos.randomdicego" />
+37-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:31:9-64
+37-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:31:18-61
+38        <package android:name="com.nhnent.Qpoker" />
+38-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:32:9-53
+38-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:32:18-50
+39        <package android:name="com.lilithgames.rok.gpkr" />
+39-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:33:9-60
+39-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:33:18-57
+40        <package android:name="com.topwar.gp" />
+40-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:34:9-49
+40-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:34:18-46
+41        <package android:name="com.camelgames.aoz" />
+41-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:35:9-54
+41-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:35:18-51
+42        <package android:name="com.igg.android.lordsmobile" />
+42-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:36:9-63
+42-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:36:18-60
+43        <package android:name="com.more.lastfortress.gp" />
+43-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:37:9-60
+43-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:37:18-57
+44        <package android:name="com.nexon.kartdrift" />
+44-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:38:9-55
+44-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:38:18-52
+45        <package android:name="com.nexon.kart" />
+45-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:39:9-50
+45-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:39:18-47
+46        <package android:name="com.nianticlabs.pokemongo" />
+46-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:40:9-61
+46-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:40:18-58
+47        <package android:name="com.gof.global" />
+47-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:41:9-50
+47-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:41:18-47
+48        <package android:name="com.nintendo.zara" />
+48-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:42:9-53
+48-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:42:18-50
+49        <package android:name="com.nekki.shadowfight" />
+49-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:43:9-57
+49-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:43:18-54
+50        <package android:name="com.pubg.krmobile" />
+50-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:44:9-53
+50-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:44:18-50
+51        <package android:name="com.supercell.brawlstars" />
+51-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:45:9-60
+51-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:45:18-57
+52        <package android:name="com.pandadagames.ninja.global" />
+52-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:46:9-65
+52-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:46:18-62
+53        <package android:name="com.miHoYo.bh3korea" />
+53-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:47:9-55
+53-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:47:18-52
+54        <package android:name="com.fungames.battletanksbeta" />
+54-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:48:9-64
+54-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:48:18-61
+55        <package android:name="com.haegin.playtogether" />
+55-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:49:9-59
+55-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:49:18-56
+56        <package android:name="com.kakaogames.umamusume" />
+56-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:50:9-60
+56-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:50:18-57
+57        <package android:name="com.fantome.penguinisle" />
+57-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:51:9-59
+57-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:51:18-56
+58        <package android:name="com.nexon.fmk" />
+58-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:52:9-49
+58-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:52:18-46
+59        <package android:name="com.longtukorea.yulgang" />
+59-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:53:9-59
+59-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:53:18-56
+60        <package android:name="com.miHoYo.GenshinImpact" />
+60-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:54:9-60
+60-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:54:18-57
+61        <package android:name="com.dxx.firenow" />
+61-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:55:9-51
+61-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:55:18-48
+62        <package android:name="com.hunt.royale" />
+62-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:56:9-51
+62-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:56:18-48
+63        <package android:name="com.kr.krd3.google" />
+63-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:57:9-54
+63-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:57:18-51
+64        <package android:name="com.ncsoft.lineagem19" />
+64-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:58:9-57
+64-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:58:18-54
+65        <package android:name="com.kakaogames.archewar" />
+65-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:59:9-59
+65-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:59:18-56
+66        <package android:name="com.ncsoft.lineage2m19" />
+66-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:60:9-58
+66-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:60:18-55
+67        <package android:name="com.ncsoft.lineagew" />
+67-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:61:9-55
+67-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:61:18-52
+68        <package android:name="com.kakaogames.odin" />
+68-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:62:9-55
+68-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:62:18-52
+69        <package android:name="com.tg.jsxwkr.gp" />
+69-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:63:9-52
+69-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:63:18-49
+70        <package android:name="com.nexon.hit2" />
+70-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:64:9-50
+70-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:64:18-47
+71        <package android:name="com.nexon.mdnf" />
+71-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:65:9-50
+71-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:65:18-47
+72        <package android:name="com.roblox.client" />
+72-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:66:9-53
+72-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:66:18-50
+73        <package android:name="com.netmarble.bnsmkr" />
+73-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:67:9-56
+73-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:67:18-53
+74        <package android:name="com.jvstudios.gpstracker" />
+74-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:68:9-60
+74-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:68:18-57
+75        <package android:name="com.tg.ysczgkr.gp" />
+75-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:69:9-53
+75-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:69:18-50
+76        <package android:name="com.global.ztmslgkr" />
+76-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:70:9-55
+76-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:70:18-52
+77        <package android:name="com.devsisters.ck" />
+77-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:71:9-53
+77-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:71:18-50
+78        <package android:name="com.gravity.rox.and" />
+78-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:72:9-55
+78-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:72:18-52
+79        <package android:name="com.proximabeta.nikke" />
+79-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:73:9-57
+79-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:73:18-54
+80        <package android:name="com.qjzj4399kr.google" />
+80-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:74:9-57
+80-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:74:18-54
+81        <package android:name="com.ageofeternity.global" />
+81-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:75:9-60
+81-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:75:18-57
+82        <package android:name="com.nexon.nsc.maplem" />
+82-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:76:9-56
+82-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:76:18-53
+83        <package android:name="com.kakaogames.eversoul" />
+83-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:77:9-59
+83-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:77:18-56
+84        <package android:name="com.jiulingsykr.andr" />
+84-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:78:9-56
+84-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:78:18-53
+85        <package android:name="com.chaosportal.shark" />
+85-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:79:9-57
+85-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:79:18-54
+86        <package android:name="com.legendsabuk.legends" />
+86-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:80:9-59
+86-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:80:18-56
+87        <package android:name="com.nexon.bluearchive" />
+87-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:81:9-57
+87-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:81:18-54
+88        <package android:name="com.heavenburnsred" />
+88-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:82:9-54
+88-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:82:18-51
+89        <package android:name="com.com2us.smon.normal.freefull.google.kr.android.common" />
+89-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:83:9-92
+89-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:83:18-89
+90        <package android:name="com.ulugame.hsjgkr.google" />
+90-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:84:9-61
+90-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:84:18-58
+91        <package android:name="com.amonggods.cgpb" />
+91-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:85:9-54
+91-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:85:18-51
+92        <package android:name="com.nexters.herowars" />
+92-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:86:9-56
+92-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:86:18-53
+93        <package android:name="kr.aos.com.aprogen.dragonrajaorigin" />
+93-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:87:9-71
+93-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:87:18-68
+94        <package android:name="com.stove.epic7.google" />
+94-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:88:9-58
+94-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:88:18-55
+95        <package android:name="viva.republica.toss" />
+95-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:89:9-55
+95-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:89:18-52
+96        <package android:name="com.fusionmedia.investing" />
+96-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:90:9-61
+96-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:90:18-58
+97        <package android:name="com.miraeasset.trade" />
+97-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:91:9-56
+97-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:91:18-53
+98        <package android:name="com.kbsec.mts.iplustarngm2" />
+98-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:92:9-62
+98-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:92:18-59
+99        <package android:name="com.droid4you.application.wallet" />
+99-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:93:9-68
+99-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:93:18-65
+100        <package android:name="com.wooriwm.mugsmart" />
+100-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:94:9-56
+100-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:94:18-53
+101        <package android:name="com.wooriwm.txsmart" />
+101-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:95:9-55
+101-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:95:18-52
+102        <package android:name="com.daishin" />
+102-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:96:9-47
+102-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:96:18-44
+103        <package android:name="com.samsungpop.android.mpop" />
+103-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:97:9-63
+103-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:97:18-60
+104        <package android:name="com.yuanta.tradarm" />
+104-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:98:9-54
+104-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:98:18-51
+105        <package android:name="com.truefriend.neosmartarenewal" />
+105-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:99:9-67
+105-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:99:18-64
+106        <package android:name="com.shinhaninvest.mts" />
+106-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:100:9-57
+106-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:100:18-54
+107        <package android:name="kr.co.finda.finda" />
+107-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:101:9-53
+107-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:101:18-50
+108        <package android:name="com.btckorea.bithumb" />
+108-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:102:9-56
+108-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:102:18-53
+109        <package android:name="com.dunamu.exchange" />
+109-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:103:9-55
+109-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:103:18-52
+110        <package android:name="net.daum.android.webtoon" />
+110-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:104:9-60
+110-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:104:18-57
+111        <package android:name="com.nhn.android.webtoon" />
+111-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:105:9-59
+111-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:105:18-56
+112        <package android:name="co.spoonme" />
+112-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:106:9-46
+112-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:106:18-43
+113        <package android:name="com.netflix.mediaclient" />
+113-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:107:9-59
+113-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:107:18-56
+114        <package android:name="net.cj.cjhv.gs.tving" />
+114-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:108:9-56
+114-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:108:18-53
+115        <package android:name="kr.co.captv.pooqV2" />
+115-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:109:9-54
+115-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:109:18-51
+116        <package android:name="com.jobplanet.kr.android" />
+116-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:110:9-60
+116-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:110:18-57
+117        <package android:name="net.nrise.moci" />
+117-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:111:9-50
+117-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:111:18-47
+118        <package android:name="com.teamblind.blind" />
+118-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:112:9-55
+118-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:112:18-52
+119        <package android:name="com.linkedin.android" />
+119-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:113:9-56
+119-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:113:18-53
+120        <package android:name="kr.co.rememberapp" />
+120-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:114:9-53
+120-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:114:18-50
+121        <package android:name="com.facebook.katana" />
+121-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:115:9-55
+121-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:115:18-52
+122        <package android:name="com.kakao.talk" />
+122-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:116:9-50
+122-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:116:18-47
+123        <package android:name="com.nhn.android.band" />
+123-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:117:9-56
+123-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:117:18-53
+124        <package android:name="com.instagram.android" />
+124-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:118:9-57
+124-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:118:18-54
+125        <package android:name="com.nhn.android.search" />
+125-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:119:9-58
+125-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:119:18-55
+126        <package android:name="com.ss.android.ugc.trill" />
+126-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:120:9-60
+126-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:120:18-57
+127        <package android:name="com.twitter.android" />
+127-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:121:9-55
+127-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:121:18-52
+128        <package android:name="com.nexon.er" />
+128-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:122:9-48
+128-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:122:18-45
+129        <package android:name="com.nike.omega" />
+129-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:123:9-50
+129-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:123:18-47
+130        <package android:name="com.coupang.mobile" />
+130-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:124:9-54
+130-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:124:18-51
+131        <package android:name="com.alibaba.aliexpresshd" />
+131-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:125:9-60
+131-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:125:18-57
+132        <package android:name="com.einnovation.temu" />
+132-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:126:9-56
+132-->[cauly-sdk-3.5.30.aar] C:\Users\jskin\.gradle\caches\transforms-4\e5cc4918227a502b4c6ed3d55efdc71f\transformed\jetified-cauly-sdk-3.5.30\AndroidManifest.xml:126:18-53
+133    </queries>
+134
+135    <uses-permission android:name="android.permission.WAKE_LOCK" />
+135-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:25:5-68
+135-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:25:22-65
+136    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+136-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+136-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+137
+138    <application
+138-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:6:5-35:19
+139        android:name="com.js.msensorview.MainApp"
+139-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:7:9-32
+140        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+140-->[androidx.core:core:1.5.0] C:\Users\jskin\.gradle\caches\transforms-4\4b3371d6bb7488af3b7ad48714fa1932\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+141        android:debuggable="true"
+142        android:extractNativeLibs="true"
+143        android:icon="@drawable/icon"
+143-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:6:18-47
+144        android:label="@string/app_name" >
+144-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:6:48-80
+145
+146        <!-- Google Play Service SDK 설정 -->
+147        <!--
+148        Google Play Service SDK를 사용하는 App에 한해 아래 meta-
+149		data 테그를 추가한다.
+150        -->
+151        <!--
+152        (https://developer.android.com/google/play-
+153		services/setup.html)
+154        -->
+155        <meta-data
+155-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:13:3-15:60
+156            android:name="com.google.android.gms.version"
+156-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:14:6-51
+157            android:value="@integer/google_play_services_version" />
+157-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:15:4-57
+158
+159        <activity
+159-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:17:9-25:20
+160            android:name="com.js.msensorview.AndroidSensorActivity"
+160-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:17:19-74
+161            android:exported="true"
+161-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:20:13-36
+162            android:label="@string/app_name"
+162-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:18:19-51
+163            android:windowSoftInputMode="stateAlwaysHidden" >
+163-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:19:19-66
+164            <intent-filter>
+164-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:21:13-24:29
+165                <action android:name="android.intent.action.MAIN" />
+165-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:22:17-69
+165-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:22:25-66
+166
+167                <category android:name="android.intent.category.LAUNCHER" />
+167-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:23:17-77
+167-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:23:27-74
+168            </intent-filter>
+169        </activity>
+170        <activity
+170-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:26:3-33:20
+171            android:name="com.js.msensorview.ResultActivity"
+171-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:26:13-61
+172            android:configChanges="orientation|keyboardHidden"
+172-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:27:13-63
+173            android:exported="true"
+173-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:29:13-36
+174            android:label="Save View" >
+174-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:28:13-38
+175            <intent-filter>
+175-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:30:9-32:29
+176                <action android:name="android.intent.action.MAIN" />
+176-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:22:17-69
+176-->C:\project\study\MagneticSensor\app\src\main\AndroidManifest.xml:22:25-66
+177            </intent-filter>
+178        </activity>
+179
+180        <receiver
+180-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+181            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+181-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+183            android:exported="false" >
+183-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+184        </receiver>
+185
+186        <service
+186-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+187            android:name="com.google.android.gms.measurement.AppMeasurementService"
+187-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+188            android:enabled="true"
+188-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+189            android:exported="false" />
+189-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+190        <service
+190-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+191            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+191-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+192            android:enabled="true"
+192-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+194            android:permission="android.permission.BIND_JOB_SERVICE" />
+194-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\3b7f16ea0713f28edfbea01ea70a8a76\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+195        <service
+195-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:28:9-34:19
+196            android:name="com.google.firebase.components.ComponentDiscoveryService"
+196-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:29:13-84
+197            android:directBootAware="true"
+197-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+198            android:exported="false" >
+198-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:30:13-37
+199            <meta-data
+199-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+200                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+200-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+201                android:value="com.google.firebase.components.ComponentRegistrar" />
+201-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\jskin\.gradle\caches\transforms-4\ec38d94f586f24f9e543b9626b148f1b\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+202            <meta-data
+202-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jskin\.gradle\caches\transforms-4\93b9dfe607328c7c29ce3b8ad260106a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+203                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+203-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jskin\.gradle\caches\transforms-4\93b9dfe607328c7c29ce3b8ad260106a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+204                android:value="com.google.firebase.components.ComponentRegistrar" />
+204-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\jskin\.gradle\caches\transforms-4\93b9dfe607328c7c29ce3b8ad260106a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+205        </service>
+206
+207        <activity
+207-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:10:9-14:67
+208            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+208-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:11:13-75
+209            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+209-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:12:13-144
+210            android:screenOrientation="unspecified"
+210-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:13:13-52
+211            android:theme="@style/Theme.Transparent.Permission" />
+211-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:14:13-64
+212
+213        <provider
+213-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:16:9-19:40
+214            android:name="com.gun0912.tedpermission.provider.TedPermissionProvider"
+214-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:17:13-84
+215            android:authorities="com.js.msensorview.tedpermissionprovider"
+215-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:18:13-73
+216            android:exported="false" />
+216-->[io.github.ParkSangGwon:tedpermission:3.3.0] C:\Users\jskin\.gradle\caches\transforms-4\207a574c979885435686311ea1dee811\transformed\jetified-tedpermission-3.3.0\AndroidManifest.xml:19:13-37
+217
+218        <activity
+218-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jskin\.gradle\caches\transforms-4\9385ac36e801669e521ebcf1b787031b\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+219            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+219-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jskin\.gradle\caches\transforms-4\9385ac36e801669e521ebcf1b787031b\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jskin\.gradle\caches\transforms-4\9385ac36e801669e521ebcf1b787031b\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+221            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+221-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jskin\.gradle\caches\transforms-4\9385ac36e801669e521ebcf1b787031b\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+222
+223        <provider
+223-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+224            android:name="com.google.firebase.provider.FirebaseInitProvider"
+224-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+225            android:authorities="com.js.msensorview.firebaseinitprovider"
+225-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+226            android:directBootAware="true"
+226-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+227            android:exported="false"
+227-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+228            android:initOrder="100" />
+228-->[com.google.firebase:firebase-common:20.1.2] C:\Users\jskin\.gradle\caches\transforms-4\9a6aa42e6c675f594ee1f9b854e87cb5\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+229    </application>
+230
+231</manifest>

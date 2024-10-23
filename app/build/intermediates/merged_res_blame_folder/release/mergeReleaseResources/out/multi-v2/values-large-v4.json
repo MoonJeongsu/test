@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.js.msensorview.app-mergeReleaseResources-19:/values-large-v4/values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jskin\\.gradle\\caches\\transforms-4\\e5cc4918227a502b4c6ed3d55efdc71f\\transformed\\jetified-cauly-sdk-3.5.30\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,100,146",
+                        "endColumns": "44,45,43",
+                        "endOffsets": "95,141,185"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "532,577,623",
+                        "endColumns": "44,45,43",
+                        "endOffsets": "572,618,662"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jskin\\.gradle\\caches\\transforms-4\\e611c64051c1446de2e4b7571d5129b2\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,667,771",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,766,882"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jskin\\.gradle\\caches\\transforms-4\\ee5dd9afb0d97184f12bcb4010edc0f7\\transformed\\material-1.0.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "14,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "887,1009",
+                        "endColumns": "121,133",
+                        "endOffsets": "1004,1138"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_popuptitle"
+            android:layout_width="match_parent"
+            android:layout_height="49.33dp"
+            android:orientation="vertical" >
+
+            <com.js.msensorview.ui.MarkerTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="알림"
+                android:textColor="#292929"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dp"
+                android:background="#d5d5d5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_defaltcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.js.msensorview.ui.MarkerTextView
+                android:id="@+id/tv_defalt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="팝업내용"
+                android:textColor="#292929"
+                android:textSize="14.67dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_popupbutton" 
+            android:layout_width="match_parent"
+            android:layout_height="64.67dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.js.msensorview.ui.MarkerButton
+                android:id="@+id/bt_firstbutton"
+                android:layout_width="0dp"
+                android:layout_height="42.67dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray"
+                android:gravity="center"
+                android:text="취소"
+                android:textColor="#ffffff"
+                android:textSize="15.33dp"
+                android:textStyle="bold" />
+
+            <com.js.msensorview.ui.MarkerButton
+                android:id="@+id/bt_secondbutton"
+                android:layout_width="0dp"
+                android:layout_height="42.67dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_orange"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="15.33dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
